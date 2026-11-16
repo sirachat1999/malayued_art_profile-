@@ -5,7 +5,7 @@ const EMAIL = 'sirachat.su@yahoo.com'
 
 const contacts = [
   { icon: '', title: 'Email', value: EMAIL, href: `mailto:${EMAIL}` },
-  { icon: '', title: 'GitHub', value: 'github.com/sirachat1999', href: 'https://github.com/sirachat1999' },
+  { icon: '', title: 'IG', value: 'malayued_art', href: 'https://www.instagram.com/malayued_art/' },
   { icon: '', title: 'Location', value: 'Thailand', href: null },
 ]
 
