@@ -19,7 +19,7 @@ function Footer() {
         <div className="flex flex-col items-center gap-2 md:items-start">
           <Link href="/" className="flex items-center gap-2">
             <span className="logo-orb">M</span>
-            <span className="text-lg font-bold">Malayued</span>
+            <span className="text-lg font-bold">Malayued Art</span>
           </Link>
           <p className="text-sm opacity-80">Art &amp; profile website</p>
         </div>

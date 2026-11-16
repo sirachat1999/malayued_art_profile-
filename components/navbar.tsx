@@ -19,7 +19,7 @@ function Navbar() {
         {/* ซ้าย: โลโก้ */}
         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <span className="logo-orb">M</span>
-          <span className="text-lg font-bold">Malayued</span>
+          <span className="text-lg font-bold">Malayued Art</span>
         </Link>
 
         {/* ขวา: เมนู (จอใหญ่) */}
