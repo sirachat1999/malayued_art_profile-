@@ -6,6 +6,10 @@ const links = [
   { href: '/my_artwork', label: 'Artwork' },
   { href: '/contact', label: 'Contact' },
 ]
+async function CurrentYear() {
+  'use cache'
+  return <>{new Date().getFullYear()}</>
+}
 
 function Footer() {
   return (
@@ -43,9 +47,9 @@ function Footer() {
       </div>
 
       {/* แถบลิขสิทธิ์ */}
-      <div className="footer-bottom px-4 py-3 text-center text-xs sm:px-8">
-        © {new Date().getFullYear()} Malayued. All rights reserved.
-      </div>
+   <div className="footer-bottom px-4 py-3 text-center text-xs sm:px-8">
+  © <CurrentYear /> Malayued. All rights reserved.
+</div>
     </footer>
   )
 }
