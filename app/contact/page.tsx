@@ -1,12 +1,12 @@
 import ContactForm from '../../components/contact-form'
 
 // เปลี่ยนข้อมูลตรงนี้เป็นของจริงของคุณ
-const EMAIL = 'your-email@example.com'
+const EMAIL = 'sirachat.su@yahoo.com'
 
 const contacts = [
-  { icon: '✉️', title: 'Email', value: EMAIL, href: `mailto:${EMAIL}` },
-  { icon: '💻', title: 'GitHub', value: 'github.com/sirachat1999', href: 'https://github.com/sirachat1999' },
-  { icon: '📍', title: 'Location', value: 'Thailand', href: null },
+  { icon: '', title: 'Email', value: EMAIL, href: `mailto:${EMAIL}` },
+  { icon: '', title: 'GitHub', value: 'github.com/sirachat1999', href: 'https://github.com/sirachat1999' },
+  { icon: '', title: 'Location', value: 'Thailand', href: null },
 ]
 
 export default function ContactPage() {
