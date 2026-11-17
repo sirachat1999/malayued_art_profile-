@@ -198,3 +198,84 @@ body {
     0 12px 28px rgba(0, 80, 140, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
+
+/* ===== Home page ===== */
+
+/* ลูกแก้วโลโก้ขนาดใหญ่ (ต้องอยู่ต่อจาก .logo-orb) */
+.logo-orb-lg {
+  width: 5rem;
+  height: 5rem;
+  font-size: 2rem;
+}
+
+/* ชื่อเว็บตัวใหญ่ไล่สีฟ้า */
+.hero-title {
+  background: linear-gradient(180deg, #0b5f9e 0%, #1e9be8 60%, #34b3f5 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 2px rgba(255, 255, 255, 0.8));
+}
+
+/* ปุ่มรอง: กระจกขาว ตัวอักษรสีฟ้า */
+.aero-btn-light {
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(11, 107, 179, 0.5);
+  color: #0b6bb3;
+  font-weight: 600;
+  background: linear-gradient(180deg, #ffffff 0%, #e1f6ff 50%, #c4ebff 51%, #e9f8ff 100%);
+  box-shadow:
+    0 3px 8px rgba(0, 90, 160, 0.25),
+    inset 0 1px 1px #fff;
+  transition: filter 0.2s, transform 0.2s;
+}
+.aero-btn-light:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+/* การ์ดผลงาน */
+.art-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.art-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 14px 30px rgba(0, 80, 140, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+.art-thumb {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 3;
+}
+/* แสงสะท้อนมันวาวครึ่งบนของรูป */
+.art-thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 50% 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.05));
+  pointer-events: none;
+}
+
+/* ฟองสบู่ลอย */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.15) 45%, rgba(111, 208, 255, 0.25) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 -4px 8px rgba(30, 155, 232, 0.25);
+  animation: float-up 9s ease-in infinite;
+}
+@keyframes float-up {
+  0%   { transform: translateY(0) scale(0.9); opacity: 0; }
+  15%  { opacity: 1; }
+  100% { transform: translateY(-420px) scale(1.1); opacity: 0; }
+}
+/* คนที่ปิดแอนิเมชันในเครื่อง จะไม่เห็นฟองเคลื่อนไหว */
+@media (prefers-reduced-motion: reduce) {
+  .bubble { animation: none; opacity: 0.6; }
+}
